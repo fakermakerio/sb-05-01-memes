@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>meme me</title>
+
+	<script src="https://kit.fontawesome.com/47f3d319dc.js" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+	<div id="app">
+
+		<h1>¡meme me!</h1>
+		
+		<form class="create-form">
+
+			<div class="meme-preview-container">
+				<div class="meme meme-preview">
+					<div class="caption-placeholder caption">I duz has preview!</div>
+					<div class="caption-top caption"></div>
+					<div class="caption-bottom caption"></div>
+					<div class="image"></div>
+					<div class="image-placeholder"><i class="fas fa-cat"></i></div>
+				</div>
+			</div>
+
+			<div class="form-fields-container">
+				<div class="form-field">
+					<label for="imageUrl">Image URL*</label>
+					<input name="imageUrl" type="url" required placeholder="Enter a URL..." />
+				</div>
+				<div class="form-field">
+					<label for="topCaption">Top Caption*</label>
+					<input name="topCaption" type="text" required placeholder="Enter text for the top..." />
+				</div>
+				<div class="form-field">
+					<label for="bottomCaption">Bottom Caption</label>
+					<input name="bottomCaption" type="text" placeholder="(Optional) Enter text for the bottom..." />
+				</div>
+				<button type="submit" class="create-button">immortalize!</button>
+			</div>
+
+		</form>
+
+		<ul class="meme-list">
+			<!-- Template will be removed at start -->
+			<li class="meme-list-item">
+				<div class="meme">
+					<div class="caption-top caption"></div>
+					<div class="caption-bottom caption"></div>
+					<div class="image"></div>
+				</div>
+				<button class="delete-button"><i class="far fa-trash-alt"></i></button>
+			</li>
+		</ul>
+
+</body>
+
+</html>
